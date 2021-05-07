@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgba(236, 236, 228, 0.021);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*css in react*/
+
+.Container{
+ display: flex;
+}
+.Container > div {
+ border: 1px solid rgba(204, 204, 204, 0.473);
+ padding: 10px;
+}
+.Column1, .Column2, .Column3 {
+ flex: 1;
+}
+.Column1 {
+ background-color: rgba(206, 22, 22, 0.952);
+}
+.Column2 {
+ background-color: rgb(151, 85, 10);
+}
+.Column3 {
+ background-color: rgb(165, 137, 11);
+}
+@media (max-width: 768px){
+ .Container{
+ flex-direction: column;
+ }
+}
